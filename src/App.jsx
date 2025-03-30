@@ -143,7 +143,7 @@ function App() {
           />
         </div>
         <button className="calculate-btn" onClick={calculateAge}>
-          <img src="./src/icon-arrow.svg" alt="Calculate" />
+          <img src="icon-arrow.svg" alt="Calculate" />
         </button>{" "}
 
 
