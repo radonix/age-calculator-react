@@ -11,12 +11,12 @@ const YearInput = ({ value, onChange, onBlur }) => {
         type="number"
         value={value}
         onChange={onChange}
-        onBlur={onBlur} // Added onBlur for validation
+        onBlur={onBlur}
         id="year"
         placeholder="YYYY"
         max={new Date().getFullYear()}
       />
-      <span id="yearErrorMsg"></span> {/* Added error message span */}
+      <span id="yearErrorMsg"></span> 
     </div>
   );
 };
@@ -31,13 +31,13 @@ const MonthInput = ({ value, onChange, onBlur }) => {
         type="number"
         value={value}
         onChange={onChange}
-        onBlur={onBlur} // Added onBlur for validation
+        onBlur={onBlur} 
         id="month"
         placeholder="MM"
         min="1"
         max="12"
       />
-      <span id="monthErrorMsg"></span> {/* Added error message span */}
+      <span id="monthErrorMsg"></span> 
     </div>
   );
 };
@@ -52,13 +52,13 @@ const DayInput = ({ value, onChange, onBlur }) => {
         type="number"
         value={value}
         onChange={onChange}
-        onBlur={onBlur} // Added onBlur for validation
+        onBlur={onBlur} 
         id="day"
         placeholder="DD"
         min="1"
         max="31"
       />
-      <span id="dayErrorMsg"></span> {/* Added error message span */}
+      <span id="dayErrorMsg"></span> 
     </div>
   );
 };
@@ -95,7 +95,7 @@ function App() {
 
   const calculateAge = () => {
     if (!validateInputs()) {
-      return; // Early exit if validation fails
+      return; 
     }
 
     const birthDate = new Date(year, month - 1, day);
