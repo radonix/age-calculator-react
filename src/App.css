@@ -93,17 +93,17 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
-  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+  transition: background 0.3s, transform 0.3s; 
 }
 
 .calculate-btn:hover {
   background: #7C3AED;
-  transform: translate(-50%, 50%) scale(1.05); /* Slightly enlarge on hover */
+  transform: translate(-50%, 50%) scale(1.05); 
 }
 
 .calculate-btn svg {
-  width: 44px; /* Default size */
-  height: 44px; /* Default size */
+  width: 44px;
+  height: 44px; 
 }
 
 /* Medium screens (max-width: 768px) */
@@ -137,19 +137,19 @@
   }
 
   .calculate-btn {
-    width: 64px; /* Adjusted size */
-    height: 64px; /* Adjusted size */
-    transform: translate(-50%, 50%); /* Adjusted positioning */
+    width: 64px; 
+    height: 64px; 
+    transform: translate(-50%, 50%); 
   }
 
   .calculate-btn svg {
-    width: 24px; /* Adjusted size */
-    height: 24px; /* Adjusted size */
+    width: 24px;
+    height: 24px; 
   }
 
 }
 
-/* Small screens (max-width: 480px) */
+
 @media (max-width: 480px) {
   .calculator-container {
     padding: 1.5rem;
@@ -172,19 +172,18 @@
     font-size: 2.5rem;
   }
   .calculate-btn {
-    width: 48px; /* Adjusted size */
-    height: 48px; /* Adjusted size */
-    transform: translate(-50%, 225%);/* Adjusted positioning */
+    width: 48px; 
+    height: 48px; 
+    transform: translate(-50%, 225%);
   }
 
   .calculate-btn svg {
-    width: 20px; /* Adjusted size */
-    height: 20px; /* Adjusted size */
+    width: 20px; 
+    height: 20px; 
   }
 
 }
 
-/* Large screens (min-width: 1280px) */
 @media (min-width: 1280px) {
   #root {
     padding: 3rem;
